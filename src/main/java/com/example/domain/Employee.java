@@ -7,7 +7,7 @@ public class Employee {
 
     private Integer id;
     private String name;
-    private String imge;
+    private String image;
     private String gender;
     private Date hireDate;
     private String mailAddress;
@@ -24,12 +24,12 @@ public class Employee {
          */
     }
 
-    public Employee(Integer id, String name, String imge, String gender, Date hireDate, String mailAddress,
+    public Employee(Integer id, String name, String image, String gender, Date hireDate, String mailAddress,
             String zipCode, String address, String telephone, Integer salary, String characteristics,
             Integer dependentsCount) {
         this.id = id;
         this.name = name;
-        this.imge = imge;
+        this.image = image;
         this.gender = gender;
         this.hireDate = hireDate;
         this.mailAddress = mailAddress;
@@ -57,12 +57,12 @@ public class Employee {
         this.name = name;
     }
 
-    public String getImge() {
-        return imge;
+    public String getImage() {
+        return image;
     }
 
-    public void setImge(String imge) {
-        this.imge = imge;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getGender() {
@@ -139,7 +139,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee [id=" + id + ", name=" + name + ", imge=" + imge + ", gender=" + gender + ", hireDate="
+        return "Employee [id=" + id + ", name=" + name + ", image=" + image + ", gender=" + gender + ", hireDate="
                 + hireDate + ", mailAddress=" + mailAddress + ", zipCode=" + zipCode + ", address=" + address
                 + ", telephone=" + telephone + ", salary=" + salary + ", characteristics=" + characteristics
                 + ", dependentsCount=" + dependentsCount + "]";
