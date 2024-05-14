@@ -50,7 +50,7 @@ public class AdministratorRepository {
      * メールアドレスとパスワードから管理者情報を取得する()
      */
     public Administrator findByMailAddressAndPassword(String mailAddress, String password) {
-        String sql = "SELECT id,name,mail_address,password FROM administrators WHERE mailaddress = :mailAddress AND password = :password";
+        String sql = "SELECT id,name,mail_address,password FROM administrators WHERE mail_address = :mailAddress AND password = :password";
         SqlParameterSource param = new MapSqlParameterSource()
                 .addValue("mailAddress", mailAddress)
                 .addValue("password", password);
