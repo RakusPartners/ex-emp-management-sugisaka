@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.domain.Administrator;
 import com.example.form.InsertAdministratorForm;
+import com.example.form.LoginForm;
 import com.example.service.AdministratorService;
 
 @Controller
@@ -48,5 +49,11 @@ public class AdministractorController {
          * ログイン画面にリダイレクトする
          */
         return "redirect:/login";
+
+    }
+
+    @GetMapping("/")
+    public String toLogin(LoginForm form) {
+        return "administrator/login";
     }
 }
